@@ -1,0 +1,174 @@
+
+
+/*Header start*/
+header {
+   
+    background-color:  #4055a5;
+    width: 100%;
+    position: fixed;
+   
+}
+
+/*Phone button*/
+button {
+
+position: relative;
+bottom: 1em;
+left: 3em;
+
+}
+
+
+/*Phone button styling*/
+a:link { 
+    color: black;
+    font-style: none;
+    text-decoration: none;
+    
+}
+
+
+/* Social Icons*/
+
+  #socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    position: relative;
+    top: 1.5em;
+    right: 3em;
+   
+}
+
+/*Header end*/
+
+/*Banner start*/
+#APDbanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+
+#logo {
+    display: flex;
+    width: 100%;
+    padding-top: 4em;
+    margin: 0 auto;
+ 
+    
+}
+/*Banner end/*
+
+/*Services start*/
+#services {
+   
+    display: flex;
+    background-color:  #060034; 
+    font-size: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 3em;
+   
+   
+    
+}
+
+
+
+#servicesText {
+    color: white;
+ 
+  
+}
+
+
+
+li {
+    margin-bottom: 10px; /* Add vertical space between items */
+    margin-right: 5px;  /* Add horizontal space if needed */
+    
+  }
+
+
+  #servicesText, #servicesCarousel {
+    flex: 1; /* Make both elements take up equal space */
+    
+    
+  }
+
+
+  .carousel-control-prev {
+    left: -70px;
+   
+  }
+
+  .block { 
+    width: auto;
+    height: auto;
+
+  }
+
+ 
+
+  /* TEST
+  #carouselButton {
+    border: red solid 5px;
+    display: flex;
+    gap: 10em;
+   
+  }
+
+  #servicesCarousel button {
+    border: red solid 5px;
+ display: flex;
+ gap: 100px;
+  }
+  
+*/
+
+@media only screen and (max-width: 767px) {
+    /* Your CSS styles for small phone screens here */
+
+
+
+    button{
+        position: relative;
+        left: -5px;
+       
+      
+    }
+    
+    #socials {
+        
+        position:relative;
+        left: 5px;
+    }
+
+
+    #logo {
+      top: 3em;
+      margin: 0 auto;
+      height: 15em;
+  
+    }
+
+    .services {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        
+      }
+    
+      #servicesText, #servicesCarousel {
+        flex: 100%; /* Take up full width on smaller screens */
+      }
+    
+      .carousel-control-next {
+        margin-left:15em ;
+        left: -50px;
+        
+    
+    }
+
+   
+    }
+  
